@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Portfolio</h1>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div id="menu-toggle" class="menu-toggle" onclick="toggleMenu()">☰</div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <img src = "C:\Users\ilakk\OneDrive\Desktop\project\portfolio.jpg">
+                <h1><i>HEY FRIENDS! I'AM ILAKKIYA.</i></h1>
+                <h2>WELCOME TO MY WEBSITE.</h2>
+
+            </div>
+        </section>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div>
+                <p>I'm a student of RMKEC has selected for<br> virtual internship position
+                in Codsoft for web development.Feeling excited......</p></div>
+                <div>
+            Proudly,Saying This is my first internship.Thankyou for this oppurtunity.</div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div>
+                <p>I have the capacity to make errorless in html programming.
+                                <br>So I interested in doing web development.</p></div>
+                  <div><p>I can able to do front-end and back-end,<br>
+                which is useful for many applications</p></div>
+                
+                <div><p>Learned basics python,which is very easy to make Machine Learning Projects.</p></div>
+
+                <div>From the out of work,I like to dance</div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form id="contact-form" onsubmit="submitForm(event)">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send</button>
+                </form>
+                <p id="confirmation" class="hidden">Thank you for this Internship!</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; My portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
